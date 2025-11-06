@@ -11,11 +11,9 @@ data acquisition → return/covariance estimation → optimization → sensitivi
 ---
 
 ## 🧮 Optimization Model
-\[
-\max_w \frac{w^T\mu - r_f}{\sqrt{w^T \Sigma w}}
-\quad
-\text{s.t. } \sum_i w_i = 1,\; w_i \ge 0
-\]
+Maximize: (wᵀμ − r_f) / √(wᵀΣw)
+Subject to: Σ wᵢ = 1,  wᵢ ≥ 0
+
 
 where  
 
